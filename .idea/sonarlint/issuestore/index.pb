@@ -53,3 +53,9 @@ Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 mvnw,5\d\5d837c4ed85ecaaf932c506e80ff5d7b9f3d590d
 8
 mvnw.cmd,1\f\1f1763f358c257ea3515417352b82b0165647ad1
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+:
+
+prueba.txt,3\6\36f030bfa1a0f93241a3b989b66042935bf62db0
