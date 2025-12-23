@@ -1,0 +1,57 @@
+
+
+respuesta del codigo:::
+
+
+B.
+¿Cuál es el patrón de diseño principal recomendado para permitir que la librería sea extensible con nuevos proveedores (Mailgun, Twilio, etc.) sin modificar el núcleo?
+
+	Strategy
+	Respuesta correcta
+
+	Permite definir una familia de algoritmos (proveedores), encapsular cada uno y hacerlos intercambiables según el canal requerido.
+
+
+	D.
+
+	Factory Method
+	No exactamente
+
+	Ayuda a la creación de objetos, pero la arquitectura propuesta se centra más en la ejecución intercambiable que en la instanciación.
+
+A.
+En el contexto de Java 17, ¿por qué se recomienda usar 'records' para la clase Notification?
+
+Porque son inmutables por defecto y reducen el código repetitivo (boilerplate).
+¡Así es!
+
+Los records generan automáticamente constructores, accessors, equals y hashCode, ideales para objetos de transporte de datos.
+
+
+B.
+¿Qué significa que la librería deba ser 'agnóstica a frameworks'?
+
+Que no debe utilizar anotaciones como @Service o @Component de Spring.
+Respuesta correcta
+
+Al evitar estas anotaciones, la librería puede ser instanciada manualmente en cualquier proyecto Java puro.
+
+---
+Si deseas agregar soporte para notificaciones por WhatsApp en el futuro, ¿qué paso es necesario según el diseño propuesto?
+
+Crear una nueva clase que implemente la interfaz NotificationProvider.
+¡Así es!
+Simplemente se crea la implementación y se registra en el servicio, cumpliendo con el principio Open/Closed.
+---
+¿Cuál es el propósito del paquete 'api' en la estructura del proyecto sugerida?
+
+Definir los contratos (interfaces) y modelos públicos que el usuario final conocerá.
+¡Así es!
+
+El paquete API expone lo que es necesario para interactuar con la librería sin revelar la implementación interna.
+---
+*********************************
+*********************************
+falta
+dentro de mail hay otros subcanales ver que hacer en esos casos ...definir mas enums ????
+quieren que use principio dependency inversion ...tendria que mostrar el envio de notificaciones de un prodiders ?
